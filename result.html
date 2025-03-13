@@ -7,25 +7,29 @@
         <link href="style.css" rel="stylesheet">
     </head>
 
-    <h1>登録しました！！</h1>
+    <body>
+        <h1>登録しました！！</h1>
 
-    <h3>
-        詳細は郵送にてお送り致します。<br>
-        あなたの住所は分かっています。
-    </h3>
+        <h3>
+            詳細は郵送にてお送り致します。<br>
+            あなたの住所は分かっています。
+        </h3>
+    
+        <h2>
+            10秒後に元のページに戻ります。
+        </h2>
+    
+        <button onclick="location.href='./index.html'">遷移しない場合はクリック</button>
+    
+        <script>
+    
+            window.onload = function() {
+                setTimeout(function() {
+                    window.location.href = 'index.html';
+                }, 10000);
+            }
+        </script>
 
-    <h2>
-        10秒後に元のページに戻ります。
-    </h2>
+    </body>
 
-    <button onclick="location.href='./index.html'">遷移しない場合はクリック</button>
-
-    <script>
-
-        window.onload = function() {
-            setTimeout(function() {
-                window.location.href = 'index.html';
-            }, 10000);
-        }
-    </script>
 </html>
